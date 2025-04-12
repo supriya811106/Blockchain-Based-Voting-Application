@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Decentralized Application</title>
+	<script src="https://cdn.ethers.io/lib/ethers-5.7.1.umd.min.js" type="application/javascript"></script>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="/index.html">Vote</a>
+		<a href="/ListVoters.html">List Voters</a>
+	</div>
+
+	<!-- Main Section -->
+	<section class="main">
+		<!-- Videos or Slideshow -->
+		<img class="img-slide active" src="images/voter7.jpg" alt="">
+		<img class="img-slide" src="images/voter1.jpg" alt="">
+		<img class="img-slide" src="images/voter2.jpg" alt="">
+		<img class="img-slide" src="images/voter5.jpg" alt="">
+
+
+		<!-- Contents -->
+		<!-- Slide 1 Content -->
+		<div class="content active">
+			<h2>Welcome to Decentralized Voting:</h2>
+			<h3>Transparent, Secure, and Accessible</h3>
+			<div class="block">
+				<p>Explore the next step in democratic participation with our decentralized voting platform. By
+					integrating
+					blockchain
+					technology, we offer a voting system that enhances transparency, increases security, and improves
+					accessibility.
+					Decentralized voting presents a practical solution to modernize and streamline the electoral
+					process,
+					making it
+					tamper-resistant and user-friendly. Our platform is designed to cater to the needs of a diverse,
+					tech-savvy electorate,
+					aiming to make every vote count in a more efficient and reliable way. Learn how we're making
+					democratic
+					processes fit
+					for the digital age.</p>
+			</div>
+
+		</div>
+
+		<!-- Slider Navigation -->
+		<div class="slider-navigation">
+			<div class="nav-btn active"></div>
+			<div class="nav-btn"></div>
+			<div class="nav-btn"></div>
+			<div class="nav-btn"></div>
+
+			<!-- More navigation buttons -->
+		</div>
+	</section>
+
+	<div class="metamask">
+		<button class="card-btn" onclick="connectMetamask()">Connect Metamask</button>
+		<p id="metamasknotification"></p>
+	</div>
+	
+
+	<div class="container">
+		<span>VOTE HERE</span>
+		<input type="number" id="voteIndexInput" placeholder="Enter Candidate Index...">
+		<button class="card-btn" onclick="castVote()">Cast Vote</button>
+
+		
+
+		<p id="cand"></p>
+
+		<button class="card-btn" s onclick="voteStatus()">Check Voting Status</button>
+		<p id="status"></p>
+		<p id="time"></p>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Decentralized Application</title>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.1.umd.min.js" type="application/javascript"></script>
+    <title>Centered Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        input[type=text],
+        select {
+            width: 30%;
+            padding: 12px 20px;
+            margin: 8px 550px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type=number],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+
+    
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="/index.html">Vote</a>
+        <a href="/ListVoters.html">List Voters</a>
+    </div>
+
+<!-- Main Section -->
+<section class="main">
+    <!-- Videos or Slideshow -->
+    <img class="img-slide active" src="images/voter3.jpg" alt="">
+    <img class="img-slide" src="images/voter1.jpg" alt="">
+    <img class="img-slide" src="images/voter2.jpg" alt="">
+    <img class="img-slide" src="images/voter5.jpg" alt="">
+
+
+    <!-- Contents -->
+    <!-- Slide 1 Content -->
+    <div class="content active">
+        <h2>Welcome to Decentralized Voting:</h2>
+        <h3>Transparent, Secure, and Accessible</h3>
+        <div class="block">
+            <p>Explore the next step in democratic participation with our decentralized voting platform. By
+                integrating
+                blockchain
+                technology, we offer a voting system that enhances transparency, increases security, and improves
+                accessibility.
+                Decentralized voting presents a practical solution to modernize and streamline the electoral
+                process,
+                making it
+                tamper-resistant and user-friendly. Our platform is designed to cater to the needs of a diverse,
+                tech-savvy electorate,
+                aiming to make every vote count in a more efficient and reliable way. Learn how we're making
+                democratic
+                processes fit
+                for the digital age.</p>
+        </div>
+
+    </div>
+
+    <!-- Slider Navigation -->
+    <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        
+
+        <!-- More navigation buttons -->
+    </div>
+</section>
+
+<div class="metamask">
+    <button class="card-btn" onclick="connectMetamask()">Connect Metamask</button>
+    <p id="metamasknotification"></p>
+</div>
+
+    <div class="container">
+        <form method="POST" action="/vote" enctype="multipart/form-data">
+            <span>ADD CANDIDATE HERE</span>
+            <input type="text" name="vote" placeholder="Add name of candidate ... ">
+            <input class="card-btn" type="submit" value="Add Candidate">
+        </form>
+    </div>
+
+    <div>
+        <p id="votingStatus"></p>
+    </div>
+
+    <div class="metamask">
+        <button class="card-btn" onclick="getAllCandidates()">List All Candidates</button>
+        <p id="p3"></p>
+    </div>
+
+    <div>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Candidate name</th>
+                    <th>Candidate votes</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    
+    <div class="container">
+        <form method="POST" action="/removeCandidate" enctype="multipart/form-data">
+            <span>REMOVE CANDIDATE HERE</span>
+            <input type="number" name="candidateIndex" placeholder="Candidate Index ... ">
+            <input class="card-btn" type="submit" value="Remove Candidate">
+        </form>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
