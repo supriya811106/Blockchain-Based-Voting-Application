@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx hardhat compile",
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "build": "./node_modules/.bin/hardhat compile",
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
