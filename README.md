@@ -124,9 +124,3 @@ Your app will run at `http://localhost:3000`
 - **Transaction Errors**  
   → Check for gas limits, correct private key, and enough ETH in your account.
 
-## Acknowledgements
-
-- [Ethereum](https://ethereum.org)
-- [Ethers.js](https://docs.ethers.org/)
-- [MetaMask](https://metamask.io/)
-```
