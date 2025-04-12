@@ -1,8 +1,8 @@
-```markdown
-# Decentralized Voting Application
+
+## Decentralized Voting Application
 
 A blockchain-based voting system built on Ethereum to ensure transparency, security, and accessibility. It leverages **smart contracts**, **Ethers.js**, and **MetaMask** to allow users to cast and verify votes on the blockchain.
-````
+
 ---
 
 ## Features
