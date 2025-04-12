@@ -56,8 +56,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/supriya81106/Blockchain-Voting-Application.git
-cd Blockchain-Voting-Application
+git clone https://github.com/supriya81106/Blockchain-Based-Voting-Application.git
+cd Blockchain-Based-Voting-Application
 ```
 
 ### 2. Install Dependencies
