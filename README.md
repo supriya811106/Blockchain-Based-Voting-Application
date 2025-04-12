@@ -28,45 +28,6 @@ Before you begin, ensure you have the following installed:
 
 ---
 
-## Project Structure
-```
-Blockchain-Based-Voting-Application
-│
-├── 📁 contracts/                  # Solidity smart contracts
-│   └── Voter.sol
-│
-├── 📁 scripts/                    # Deployment and interaction scripts
-│   ├── deploy.js
-│   └── checkBalance.js
-│
-├── 📁 test/                       # Hardhat test scripts
-│   └── lock.js
-│
-├── 📁 public/                     # Static frontend served via Express
-│   ├── 📁 images/                 # Voter images or any assets
-│   │   ├── voter1.jpg
-│   │   ├── voter2.jpg
-│   │   └── ...
-│   ├── index.html                # Frontend UI
-│   ├── main.js                   # Frontend logic (connect MetaMask, voting)
-│   └── style.css                 # App styling
-│
-├── 📁 artifacts/                 # Auto-generated: compiled contract files
-│   └── contracts/
-│       └── Voter.sol/
-│           └── Voter.json        # ABI & bytecode
-│
-├── .env                          # Environment variables (private key, RPC URLs)
-├── .gitignore                    # Ignore node_modules, .env, etc.
-├── README.md                     # Project documentation
-├── hardhat.config.js             # Hardhat configuration
-├── index.js                      # Express backend server
-├── package.json                  # Project dependencies and scripts
-└── package-lock.json             # Dependency lock file
-```
-
----
-
 ## Setup Instructions
 
 ### 1. Clone the Repository
