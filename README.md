@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed:
 
 ## Project Structure
 ```
-/Blockchain-Based-Voting-Application
+Blockchain-Based-Voting-Application
 │
 ├── 📁 contracts/                  # Solidity smart contracts
 │   └── Voter.sol
