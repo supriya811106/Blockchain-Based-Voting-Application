@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "compile": "hardhat compile",
-    "deploy": "hardhat run scripts/deploy.js --network goerli",
-    "build": "npm run compile && npm run deploy"
+  "start": "node index.js",
+  "compile": "npx hardhat compile",
+  "deploy": "npx hardhat run scripts/deploy.js --network goerli",
+  "build": "npm run compile && npm run deploy"
   },
   "author": "",
   "license": "ISC",
