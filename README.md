@@ -51,8 +51,8 @@ Before you begin, ensure you have the following installed:
 ├── /scripts/                     # Scripts for deployment and interactions
 │   ├── deploy.js                 # Deployment script for deploying the contract to Ethereum
 │
-├── /test/                        # Tests for the smart contract
-│   └── test.js                   # Unit tests for the smart contract
+├── /test/                        
+│   └── Lock.js                   # Tests for the smart contract
 │
 ├── .gitignore                    # Git ignore file to exclude unnecessary files
 ├── .env                          # Environment file for storing sensitive credentials (e.g., private keys)
