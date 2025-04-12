@@ -30,23 +30,36 @@ Before you begin, ensure you have the following installed:
 
 ## Project Structure
 ```
-/project_root
+/Blockchain-Based-Voting-Application
 │
-├── /public/               # Static frontend assets
-│   ├── /images/           # Voter images
+├── /public/                      # Static frontend assets
+│   ├── /images/                  # Images used in the frontend
 │   │   ├── voter1.jpg
 │   │   ├── voter2.jpg
-│   │   └── voter7.jpg
-│   ├── index.html         # Main frontend HTML
-│   ├── main.js            # Frontend logic
-│   └── style.css          # Application styling
+│   │   └── voter3.jpg
+│   ├── index.html                # Main HTML document for the frontend
+│   ├── main.js                   # JavaScript file containing front-end logic
+│   └── style.css                 # CSS file for styling the frontend
 │
-├── /artifacts/contracts/  # Compiled smart contracts
-│   ├── voter.sol          # Solidity source
-│   └── voter.json         # ABI & deployment metadata
+├── /contracts/                   # Smart contract source code
+│   ├── voter.sol                 # Solidity source code for the voting contract
 │
-├── index.js               # Express server entry point
-└──  package.json           # Node.js dependencies and scripts
+├── /artifacts/                   # Compiled smart contracts and metadata
+│   ├── contracts/                # Contains the compiled contract files (e.g., ABI)
+│   │   ├── voter.json            # ABI and metadata for the voter contract
+│
+├── /scripts/                     # Scripts for deployment and interactions
+│   ├── deploy.js                 # Deployment script for deploying the contract to Ethereum
+│
+├── /test/                        # Tests for the smart contract
+│   └── test.js                   # Unit tests for the smart contract
+│
+├── .gitignore                    # Git ignore file to exclude unnecessary files
+├── .env                          # Environment file for storing sensitive credentials (e.g., private keys)
+├── index.js                      # Main server entry point using Express.js
+├── package.json                  # Node.js package definition, includes dependencies and scripts
+├── checkBalance.js               # Script to check the balance of the contract or user
+└── README.md                     # Project documentation 
 ```
 
 ---
