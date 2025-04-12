@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "./node_modules/.bin/hardhat compile",
   "start": "node index.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
+  "compile": "hardhat compile",
+  "deploy": "hardhat run scripts/deploy.js --network goerli", 
+  "build": "npm run compile && npm run deploy"
   },
   "author": "",
   "license": "ISC",
