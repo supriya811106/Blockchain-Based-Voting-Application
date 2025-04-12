@@ -32,34 +32,37 @@ Before you begin, ensure you have the following installed:
 ```
 /Blockchain-Based-Voting-Application
 │
-├── /public/                      # Static frontend assets
-│   ├── /images/                  # Images used in the frontend
+├── 📁 contracts/                  # Solidity smart contracts
+│   └── Voter.sol
+│
+├── 📁 scripts/                    # Deployment and interaction scripts
+│   ├── deploy.js
+│   └── checkBalance.js
+│
+├── 📁 test/                       # Hardhat test scripts
+│   └── lock.js
+│
+├── 📁 public/                     # Static frontend served via Express
+│   ├── 📁 images/                 # Voter images or any assets
 │   │   ├── voter1.jpg
 │   │   ├── voter2.jpg
-│   │   └── voter3.jpg
-│   ├── index.html                # Main HTML document for the frontend
-│   ├── main.js                   # JavaScript file containing front-end logic
-│   └── style.css                 # CSS file for styling the frontend
+│   │   └── ...
+│   ├── index.html                # Frontend UI
+│   ├── main.js                   # Frontend logic (connect MetaMask, voting)
+│   └── style.css                 # App styling
 │
-├── /contracts/                   # Smart contract source code
-│   ├── voter.sol                 # Solidity source code for the voting contract
+├── 📁 artifacts/                 # Auto-generated: compiled contract files
+│   └── contracts/
+│       └── Voter.sol/
+│           └── Voter.json        # ABI & bytecode
 │
-├── /artifacts/                   # Compiled smart contracts and metadata
-│   ├── contracts/                # Contains the compiled contract files (e.g., ABI)
-│   │   ├── voter.json            # ABI and metadata for the voter contract
-│
-├── /scripts/                     # Scripts for deployment and interactions
-│   ├── deploy.js                 # Deployment script for deploying the contract to Ethereum
-│
-├── /test/                        
-│   └── Lock.js                   # Tests for the smart contract
-│
-├── .gitignore                    # Git ignore file to exclude unnecessary files
-├── .env                          # Environment file for storing sensitive credentials (e.g., private keys)
-├── index.js                      # Main server entry point using Express.js
-├── package.json                  # Node.js package definition, includes dependencies and scripts
-├── checkBalance.js               # Script to check the balance of the contract or user
-└── README.md                     # Project documentation 
+├── .env                          # Environment variables (private key, RPC URLs)
+├── .gitignore                    # Ignore node_modules, .env, etc.
+├── README.md                     # Project documentation
+├── hardhat.config.js             # Hardhat configuration
+├── index.js                      # Express backend server
+├── package.json                  # Project dependencies and scripts
+└── package-lock.json             # Dependency lock file
 ```
 
 ---
