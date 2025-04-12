@@ -28,7 +28,7 @@ Before you begin, ensure you have the following installed:
 
 ## Project Structure
 
-```
+```sh
 /project_root
 │
 ├── /public/               # Static frontend assets
@@ -46,7 +46,6 @@ Before you begin, ensure you have the following installed:
 │
 ├── index.js               # Express server entry point
 └──  package.json           # Node.js dependencies and scripts
-
 ```
 
 ---
