@@ -28,7 +28,6 @@ Before you begin, ensure you have the following installed:
 
 ## Project Structure
 
-```sh
 /project_root
 │
 ├── /public/               # Static frontend assets
